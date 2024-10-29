@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Project</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="styleSheet" href="../css/project.css">
+</head>
+<body>
+<div id="wrapper">
+
+<!-- header of website -->
+<header><h1>Conductor's Coach</h1></header>
+
+<!-- Links to the different pages -->
+<nav class="navigation">
+	<ul style="list-style-type:none;">
+		<li><a href="../index.html">Home</a></li>
+		<li><a href="../timeline.html">History</a></li>
+		<li><a href="../traindif.html">Different Kinds of Trains</a></li>
+		<li><a href="../steam.html">Notible Steam Engines</a></li>
+		<li><a href="gallery.html">Gallery</a></li>
+		<li><a href="../railway.html">Biggest Railways</a></li>
+		<li><a href="../globe.html">Trains Around the Globe</a></li>
+	</ul>
+</nav>
+
+<!-- main text area that contains the form to add your own submission to the gallery -->
+<main>
+	<h1>Add your own submission to the gallery</h1>
+	<p>Fill out the form below to get your own experience added. All information but name is required.</p>
+	
+	<!-- Form for the user to fill out if they wish to add their personal experience to the gallery -->
+	<form method="post" action="https://webdevbasics.net/scripts/demo.php">
+	<label for="myName">Name:</label>
+	<input type="text" name="myName" id="myName">
+	<label for="myDescription">Describe the event:</label>
+	<textarea name="myDescription" id="myDescription" rows="5" cols="20" maxlength="200" required></textarea>
+	<label for="myPhotos">Add your photo(s):</label>
+	<input type="file" name="myPhotos" id="myPhotos" accept="image/png, image/gif, image/jpeg" required>
+	<input type="submit" name="mySubmit" id="mySubmit" value="Share">
+	</form>
+</main>
+
+<!-- footer area with email information  -->
+<footer>
+<p><small><strong><em>Email: <a href = "ldeniso1@my.westga.edu">ldeniso1@my.westga.edu</a></em></strong></small></p>
+</footer>
+</div>
+</body>
+</html> 
