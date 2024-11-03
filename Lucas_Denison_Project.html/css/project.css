@@ -12,7 +12,7 @@ body {
 	font-family: Arial; 
 	background-color: #8b7474; 
 	margin: 0; 
-	background-image: url('images/railroadbg.png'); 
+	background-image: url('../images/railroadbg.png'); 
 	background-size: 50px 118px;
 	background-position: center;
 }
@@ -144,8 +144,13 @@ table tr:nth-child(even) {
 }
 
 img { 
-	max-height: 49%; 
-	max-width: 49%;
+	max-height: 100%; 
+	max-width: 100%;
+}
+
+video {
+	max-height: 100%; 
+	max-width: 100%;
 }
 
 /*Places an object in the center of the page*/
@@ -160,7 +165,7 @@ img {
 }
 
 /*sections off a piece of the page */
-.section { 
+.gallery { 
 	margin-right: 2em; 
 	margin-bottom: 1em; 
 	padding: 0.5em;
@@ -168,14 +173,23 @@ img {
 	border-style: solid; 
 	border-color: #4a0b0b; 
 	border-width: 5px; 
-	width: 90%; 
+	width: 90%;
 	float: left;
 }
 
-.section p { 
+.gallery img {
+	width: 48%
+}
+
+.gallery p { 
 	font-size: 0.8em;
 	color: #dac8c8; 
 	text-align: center;
+}
+
+.gallery img:hover {
+	border: 1px solid;
+	border-color: #dac8c8;
 }
 
 form { 
@@ -231,12 +245,18 @@ dd.StremList {
 	}
 	
 	img {
-		flex: 1;
+		max-height: 50%;
+		max-width: 50%;
 	}
 	
-	.section {
+	.gallery {
 		width: 350px;
 	}
+
+	video {
+	max-height: 50%; 
+	max-width: 50%;
+}
 	
 	form { 
 		width: 40%; 
