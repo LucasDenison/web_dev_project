@@ -15,16 +15,20 @@
 
 <!-- Links to the different pages -->
 <nav class="navigation">
-	<ul style="list-style-type:none;">
-		<li><a href="index.html">Home</a></li>
-		<li><a href="timeline.html">History</a></li>
-		<li><a href="traindif.html">Different Kinds of Trains</a></li>
-		<li><a href="steam.html">Notible Steam Engines</a></li>
-		<li><a href="share/gallery.html">Gallery</a></li>
-		<li><a href="railway.html">Biggest Railways</a></li>
-		<li><a href="globe.html">Trains Around the Globe</a></li>
-		<li><a href="products.html">Products</a></li>
-	</ul>
+		<button class="btn"><a href="index.html">Home</a></button>
+		<button class="btn"><a href="timeline.html">History</a></button>
+		<button class="btn"><a href="traindif.html">Different Kinds of Trains</a></button>
+		<button class="btn"><a href="steam.html">Notible Steam Engines</a></button>
+		<div class="dropdown">
+			<button class="dropbtn" style="">Gallery</button>
+			<div id="dropdownMenu" class="dropdown-content">
+				<a href="share/gallery.html">Gallery</a>
+				<a href="share/shareExperience.html">Share</a>
+			</div>
+		</div>
+		<button class="btn"><a href="railway.html">Biggest Railways</a></button>
+		<button class="btn"><a href="globe.html">Trains Around the Globe</a></button>
+		<button class="btn"><a href="products.html">Products</a></button>
 </nav>
 
 <!-- main text area that contains the different info on the history of trains -->
@@ -68,5 +72,25 @@
 <p><small><strong><em>Email: <a href = "ldeniso1@my.westga.edu">ldeniso1@my.westga.edu</a></em></strong></small></p>
 </footer>
 </div>
+<script>
+	const button = document.getElementsByClassName('dropbtn');
+    const content = document.getElementById('dropdownMenu');
+
+    button.addEventListener('click', () => {
+        // Toggle visibility of dropdown content
+        if (content.style.display === 'block') {
+			content.style.display = 'none';
+        } else {
+            content.style.display = 'block';
+        }
+    });
+
+    // Close dropdown when clicking outside
+    window.addEventListener('click', (event) => {
+        if (!event.target.matches('.btn')) {
+            content.style.display = 'none';
+        }
+	});
+</script>
 </body>
 </html> 
