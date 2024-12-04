@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Project</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="This page provides information on two of some of the most important steam locomotives ever made. Those trains being the Mallard and the Flying Scottsman">
+<link rel="styleSheet" href="css/project.css">
+</head>
+<body>
+<div id="wrapper">
+
+<!-- header of website -->
+<header><h1>Conductor's Coach</h1></header>
+
+<!-- Links to the different pages -->
+<nav class="navigation">
+		<button class="btn"><a href="index.html">Home</a></button>
+		<button class="btn"><a href="timeline.html">History</a></button>
+		<button class="btn"><a href="traindif.html">Different Kinds of Trains</a></button>
+		<button class="btn"><a href="steam.html">Notible Steam Engines</a></button>
+		<div class="dropdown">
+			<button class="dropbtn" style="">Gallery</button>
+			<div id="dropdownMenu" class="dropdown-content">
+				<a href="share/gallery.html">Gallery</a>
+				<a href="share/shareExperience.html">Share</a>
+			</div>
+		</div>
+		<button class="btn"><a href="railway.html">Biggest Railways</a></button>
+		<button class="btn"><a href="globe.html">Trains Around the Globe</a></button>
+		<button class="btn"><a href="products.html">Products</a></button>
+</nav>
+
+<!-- main text area that contains the different info on the website and basic train knowledge -->
+<main>
+
+<h1>First Class Engines!</h1>
+<div>
+	<h2>The Flying Scotsman</h2>
+	
+		<picture>
+			<!--Source of picture https://simple.wikipedia.org/wiki/LNER_Class_A3_4472_Flying_Scotsman -->
+			<img class="center-position" src="images/scotsman.jpg" alt="The Flying Scotsman.">
+		</picture>
+	
+	<p style="text-indent: 50px;">
+		In July 1922, the British “Great Northern Railway” placed a manufacturing order for 10 of the then-new A1 “Pacific” class steam locomotives. These locomotives, first of the “A” line of steam locomotives designed by then Carriage and Wagon Superintendent for the GNR Sir Nigel Gresley, were intended to haul mainline and express passenger service along the GNR’s various lines throughout most of the British mainland and some of its east coast until the GNR was later acquired by the London and Northeastern (LNER) Railway in 1923 while the locomotives were still under construction. First among this order to arrive was GNR 1472 as the LNER had not yet decided on a numbering scheme for the newly conglomerated railway. However, in 1924 the locomotive was renamed after its intended route along the LNER line: <strong>The Flying Scotsman</strong> being renumbered to 4472.
+	</p>
+	
+	<p style="text-indent: 50px;"> 
+		From the beginning of The Flying Scotsman’s life with the LNER it was destined for greatness as its striking apple green paint scheme found a place adorning most of the LNER’s promotional materials, as well as being used to represent the railway in the 1924 and 25 British Empire Exhibition, an event held to showcase the nations various achievements and bolster trading relations among other countries. In 1928 the Scotsman pulled the first inaugural train to commemorate its route, also named The Flying Scotsman, becoming a non-stop service line for the LNER, completing the 392-mile journey from Edinburgh, Scotland to London, England in just eight hours and three minutes.
+	</p>
+	
+	<p style="text-indent: 50px;">
+		However, The Flying Scotsman would truly become the mythical figure we know it as today on November 30 th , 1934. In a bid to prove to investors the power and efficiency of steam power, as well as the railways continued usefulness in the face of car travel, the LNER hooked The Flying Scotsman to a test train and sent it off hauling a light test train between Leeds, England and London, England. Their efforts would make history, as The Flying Scotsman would become the first steam locomotive ever to hit 100 miles per hour during the roughly 169-mile journey, and The Flying Scotsman would return home a legend of our time.
+	</p>
+	
+	<h2>The Mallard</h2>
+	
+		<picture>
+			<!--Source of picture https://collection.sciencemuseumgroup.org.uk/objects/co205732/london-north-eastern-railway-steam-locomotive-mallard -->
+			<img class="center-position" src="images/mallard.jpg" alt="The Mallard.">
+		</picture>
+	
+	<p style="text-indent: 50px;">
+		Meanwhile, Nigel Gresley, now Chief Mechanical Officer
+	for the LNER, would set the next leap forward for British steam
+	technology in motion and unknowingly create Britain’s next legendary
+	locomotive. In 1935, following the success of the A2 and 3 class
+	steam locomotives began designing the new A4 class. Inspired and
+	impressed by Germany’s DRG Class SVT 877 diesel locomotive,
+	nicknamed the Hamburg Flyer, that Gresley had witnessed roughly two
+	years prior in 1933 it was decided the A4 class would be outfitted with
+	new, state-of-the-art streamlining. This design would later become a
+	trademark of the A4, with their curvaceous and slim design no doubt
+	drawing similarities to the US’s own “Upside-down Bathtub”
+	streamlining design, earning the A4’s the nickname “Streaks” among
+	artists and railfans alike. On September 27 th , 1935, LNER number
+	2509, nicknamed “Silver Link” debuted pulling a demonstration train
+	departing from King’s Cross Station, breaking all previous British rail
+	records and prompting a speed war between the LNER and their direct
+	competitor, the London, Midland, and Scottish (LMS) Railway. But in
+	March of 1938, the legend that would cement the A4 class’ place in
+	history, LNER number 4468, nicknamed “Mallard” would be outfitted
+	with an improved exhaust system, becoming the first A4 to be
+	upgraded with the “Kylchap double chimney” exhaust design. And on the
+	3 rd of July 1938, the Mallard, during a test of its new Westinghouse
+	QSA braking system, the Mallard achieved the impossible, blowing the
+	record for fastest steam locomotive completely out of the water at
+	one-hundred twenty-six miles per hour, beating the current record
+	holder at the time, German-built DRG Class 05 No. 002 by almost two
+	whole miles an hour.
+	</p>
+</div>
+</main>
+
+<!-- footer area with email information  -->
+<footer>
+<p><small><strong><em>Email: <a href = "ldeniso1@my.westga.edu">ldeniso1@my.westga.edu</a></em></strong></small></p>
+</footer>
+</div>
+<script>
+	const button = document.getElementsByClassName('dropbtn');
+    const content = document.getElementById('dropdownMenu');
+
+    button.addEventListener('click', () => {
+        // Toggle visibility of dropdown content
+        if (content.style.display === 'block') {
+			content.style.display = 'none';
+        } else {
+            content.style.display = 'block';
+        }
+    });
+
+    // Close dropdown when clicking outside
+    window.addEventListener('click', (event) => {
+        if (!event.target.matches('.btn')) {
+            content.style.display = 'none';
+        }
+	});
+</script>
+</body>
+</html> 
